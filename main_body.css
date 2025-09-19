@@ -50,12 +50,39 @@ p {
   height: 150px;
   position: relative;
   margin-bottom: 20px;
-  border-left: 15px solid rgb(251, 255, 0);
-  border-top: 15px solid rgb(251, 255, 0);
+  /* border-left: 15px solid rgb(251, 255, 0);
+  border-top: 15px solid rgb(251, 255, 0); */
   border-bottom: 15px solid transparent; 
   border-right: 15px solid transparent;
   z-index: 0;
-  grid-area: 1 / 1 / 2 / 2;}
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.lijn1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 120%;
+  height: 15px;
+  background: linear-gradient(to right, #ffff00 0%, #ff9900 100%);
+  z-index: 1;
+  pointer-events: none;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 15px) 100%, 0 100%);
+}
+
+.lijn1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 15px;
+  height: 120%;
+  background: linear-gradient(to bottom, #ffff00 0%, #ff9900 100%);
+  z-index: 1;
+  pointer-events: none;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15px), 0 100%);
+}
 
 .textPart {
   grid-area: 1 / 1 / 2 / 2;
