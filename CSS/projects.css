@@ -1,0 +1,45 @@
+p{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: start;
+}
+
+body {
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #000000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 150px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.navbar ul li a:hover {
+  text-decoration-line: underline;
+  text-decoration-color: rgb(244, 252, 0);
+}

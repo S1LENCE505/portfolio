@@ -5,8 +5,8 @@ body {
 }
 
 h1 {
-    color: rgb(251, 255, 0);
-    font-size: 70px;
+  color: rgb(251, 255, 0);
+  font-size: 70px;
   margin: 0px;
 
 }
@@ -23,13 +23,15 @@ h3 {
   font-size: 25px;
 
 }
-.project_text  {
+
+.project_text {
   color: white;
   font-size: 20px;
   margin-top: -23vh;
   margin-left: 30vh;
 }
-.project_text p:nth-child(2){
+
+.project_text p:nth-child(2) {
   color: white;
   font-size: 20px;
   padding-top: 15px;
@@ -141,13 +143,15 @@ p {
   pointer-events: none;
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15px), 0 100%);
 }
+
 .smallline {
-border-top: 3px solid rgb(255, 255, 255);
-position: relative;
-width: 90vh;
-left: 25vh;
-top: -12vh;
+  border-top: 3px solid rgb(255, 255, 255);
+  position: relative;
+  width: 90vh;
+  left: 25vh;
+  top: -12vh;
 }
+
 .vertical_line {
   border-left: 3px solid rgb(255, 255, 255);
   position: relative;
@@ -155,6 +159,7 @@ top: -12vh;
   left: 114.8vh;
   top: -12.2vh;
 }
+
 .textPart {
   grid-area: 1 / 1 / 2 / 2;
   padding-left: 10vh;
@@ -184,7 +189,7 @@ top: -12vh;
   display: block;
   color: white;
   text-align: center;
-  padding: 20px 155px;
+  padding: 20px 150px;
   text-decoration: none;
   transition: background 0.3s;
 }
