@@ -1,10 +1,12 @@
 body {
+  overflow-y: scroll;
+  overflow-x: hidden;
   background-color: black;
 }
 
 h1 {
-  color: rgb(251, 255, 0);
-  font-size: 70px;
+    color: rgb(251, 255, 0);
+    font-size: 70px;
   margin: 0px;
 
 }
@@ -19,6 +21,20 @@ h2 {
 h3 {
   color: rgb(255, 255, 255);
   font-size: 25px;
+
+}
+.project_text  {
+  color: white;
+  font-size: 20px;
+  margin-top: -23vh;
+  margin-left: 30vh;
+}
+.project_text p:nth-child(2){
+  color: white;
+  font-size: 20px;
+  padding-top: 15px;
+  margin-left: 33vw;
+  margin-top: -6.5vh;
 
 }
 
@@ -52,7 +68,7 @@ p {
   margin-bottom: 20px;
   /* border-left: 15px solid rgb(251, 255, 0);
   border-top: 15px solid rgb(251, 255, 0); */
-  border-bottom: 15px solid transparent; 
+  border-bottom: 15px solid transparent;
   border-right: 15px solid transparent;
   z-index: 0;
   grid-area: 1 / 1 / 2 / 2;
@@ -63,7 +79,7 @@ p {
   position: absolute;
   left: 0;
   top: 0;
-  width: 120%;
+  width: 200%;
   height: 15px;
   background: linear-gradient(to right, #ffff00 0%, #ff9900 100%);
   z-index: 1;
@@ -77,13 +93,68 @@ p {
   left: 0;
   top: 0;
   width: 15px;
-  height: 120%;
+  height: 200%;
   background: linear-gradient(to bottom, #ffff00 0%, #ff9900 100%);
   z-index: 1;
   pointer-events: none;
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15px), 0 100%);
 }
 
+.lijn2 {
+  border-bottom: 2px solid rgb(251, 255, 0);
+  width: 150px;
+  height: 150px;
+  position: relative;
+  margin-bottom: 20px;
+  /* border-left: 15px solid rgb(251, 255, 0);
+  border-top: 15px solid rgb(251, 255, 0); */
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid transparent;
+  z-index: 0;
+  left: 136vh;
+  top: 20vh;
+  rotate: 180deg;
+}
+
+.lijn2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200%;
+  height: 15px;
+  background: linear-gradient(to right, #ffff00 0%, #ff9900 100%);
+  z-index: 1;
+  pointer-events: none;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 15px) 100%, 0 100%);
+}
+
+.lijn2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 15px;
+  height: 200%;
+  background: linear-gradient(to bottom, #ffff00 0%, #ff9900 100%);
+  z-index: 1;
+  pointer-events: none;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15px), 0 100%);
+}
+.smallline {
+border-top: 3px solid rgb(255, 255, 255);
+position: relative;
+width: 90vh;
+left: 25vh;
+top: -12vh;
+}
+.vertical_line {
+  border-left: 3px solid rgb(255, 255, 255);
+  position: relative;
+  height: 13vh;
+  left: 114.8vh;
+  top: -12.2vh;
+}
 .textPart {
   grid-area: 1 / 1 / 2 / 2;
   padding-left: 10vh;
